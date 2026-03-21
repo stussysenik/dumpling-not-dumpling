@@ -1,0 +1,216 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  .carbon * {
+    font-family: 'Inter', -apple-system, sans-serif !important;
+  }
+  .carbon .mono {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace !important;
+  }
+
+  /* Carbon Design Tokens */
+  .carbon {
+    --cds-background: #ffffff;
+    --cds-layer-01: #f4f4f4;
+    --cds-layer-02: #e0e0e0;
+    --cds-text-primary: #161616;
+    --cds-text-secondary: #525252;
+    --cds-text-placeholder: #a8a8a8;
+    --cds-border-subtle: #e0e0e0;
+    --cds-support-success: #198038;
+    --cds-support-error: #da1e28;
+    --cds-support-info: #0043ce;
+    --cds-interactive: #0f62fe;
+    --cds-spacing-03: 8px;
+    --cds-spacing-05: 16px;
+    --cds-spacing-06: 24px;
+    --cds-spacing-07: 32px;
+    --cds-spacing-09: 48px;
+  }
+</style>
+
+<div class="carbon">
+
+<h2 style="font-family: 'Inter', sans-serif !important;">iPhone UI — IBM Carbon + Inter + Liquid Glass</h2>
+<p class="subtitle">Carbon design tokens, Inter typeface, IBM Plex Mono for data, glassy materials</p>
+
+<!-- Design Tokens Reference -->
+<div style="background: var(--cds-layer-01); border-left: 3px solid var(--cds-interactive); border-radius: 0 8px 8px 0; padding: 16px 20px; margin-bottom: 28px;">
+  <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--cds-text-secondary); margin-bottom: 10px; font-weight: 600;">Design System</div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 12px; color: var(--cds-text-secondary);">
+    <div><strong>Body:</strong> Inter 400/500</div>
+    <div><strong>Display:</strong> Inter 200 (ultralight)</div>
+    <div><strong>Data:</strong> IBM Plex Mono 500</div>
+    <div><strong>Spacing:</strong> Carbon 8px grid</div>
+    <div><strong>Success:</strong> #198038 (Carbon green)</div>
+    <div><strong>Error:</strong> #DA1E28 (Carbon red)</div>
+    <div><strong>Tap targets:</strong> min 48x48px (Carbon)</div>
+    <div><strong>Materials:</strong> Liquid glass blur</div>
+  </div>
+</div>
+
+<div class="split" style="gap: 32px; align-items: flex-start;">
+
+  <!-- Camera View -->
+  <div class="mockup">
+    <div class="mockup-header" style="font-family: 'Inter', sans-serif !important;">Camera View</div>
+    <div class="mockup-body" style="padding: 0; background: var(--cds-background); height: 640px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+
+      <!-- Camera viewport — 16px margin (Carbon spacing-05) -->
+      <div style="margin: 16px 16px 0; border-radius: 20px; background: var(--cds-layer-01); height: 360px; display: flex; align-items: center; justify-content: center; position: relative; border: 1px solid var(--cds-border-subtle);">
+        <div style="color: var(--cds-text-placeholder); font-size: 14px; font-weight: 400;">Camera Feed</div>
+        <!-- Corner brackets -->
+        <div style="position: absolute; top: 20px; left: 20px; width: 24px; height: 24px; border-top: 2px solid rgba(22,22,22,0.15); border-left: 2px solid rgba(22,22,22,0.15); border-radius: 4px 0 0 0;"></div>
+        <div style="position: absolute; top: 20px; right: 20px; width: 24px; height: 24px; border-top: 2px solid rgba(22,22,22,0.15); border-right: 2px solid rgba(22,22,22,0.15); border-radius: 0 4px 0 0;"></div>
+        <div style="position: absolute; bottom: 20px; left: 20px; width: 24px; height: 24px; border-bottom: 2px solid rgba(22,22,22,0.15); border-left: 2px solid rgba(22,22,22,0.15); border-radius: 0 0 0 4px;"></div>
+        <div style="position: absolute; bottom: 20px; right: 20px; width: 24px; height: 24px; border-bottom: 2px solid rgba(22,22,22,0.15); border-right: 2px solid rgba(22,22,22,0.15); border-radius: 0 0 4px 0;"></div>
+      </div>
+
+      <!-- Mode toggle — Carbon segmented control style, glass -->
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div style="display: flex; background: rgba(244,244,244,0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--cds-border-subtle); border-radius: 8px; padding: 0; overflow: hidden;">
+          <div style="background: var(--cds-text-primary); color: #fff; padding: 10px 24px; font-size: 14px; font-weight: 500;">Party</div>
+          <div style="color: var(--cds-text-secondary); padding: 10px 24px; font-size: 14px; font-weight: 400;">Full</div>
+        </div>
+      </div>
+
+      <!-- Bottom controls — thumb zone -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 40px 44px; display: flex; align-items: center; justify-content: space-between;">
+        <!-- Photo library — 48x48 (Carbon min tap target) -->
+        <div style="width: 48px; height: 48px; border-radius: 8px; background: rgba(244,244,244,0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--cds-border-subtle);"></div>
+
+        <!-- Capture — large, high contrast -->
+        <div style="width: 76px; height: 76px; border-radius: 50%; background: rgba(255,255,255,0.9); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border: 3px solid var(--cds-text-primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 16px rgba(0,0,0,0.06);">
+          <div style="width: 62px; height: 62px; border-radius: 50%; background: var(--cds-text-primary);"></div>
+        </div>
+
+        <!-- Live toggle — 48x48 -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(25,128,56,0.06); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 2px solid var(--cds-support-success); display: flex; align-items: center; justify-content: center;">
+            <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--cds-support-success);"></div>
+          </div>
+          <div class="mono" style="font-size: 10px; color: var(--cds-support-success); font-weight: 500; letter-spacing: 1px; margin-top: 4px;">LIVE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dumpling Result -->
+  <div class="mockup">
+    <div class="mockup-header" style="font-family: 'Inter', sans-serif !important;">Result — Dumpling!</div>
+    <div class="mockup-body" style="padding: 0; background: var(--cds-background); height: 640px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+
+      <!-- Captured image -->
+      <div style="margin: 16px; border-radius: 20px; background: var(--cds-layer-01); height: 280px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--cds-border-subtle);">
+        <div style="font-size: 80px;">🥟</div>
+      </div>
+
+      <!-- Result — clear vertical flow, no overlap -->
+      <div style="padding: 24px 24px 0; text-align: center;">
+        <!-- Success accent -->
+        <div style="width: 32px; height: 3px; background: var(--cds-support-success); margin: 0 auto 24px; border-radius: 1px;"></div>
+
+        <div style="font-weight: 200; font-size: 44px; color: var(--cds-text-primary); letter-spacing: -2px; line-height: 1;">
+          dumpling.
+        </div>
+
+        <div class="mono" style="font-size: 13px; color: var(--cds-support-success); margin-top: 16px; font-weight: 500;">
+          confidence: 0.97
+        </div>
+      </div>
+
+      <!-- Actions — bottom, glass, 48px min height -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 16px 44px; display: flex; gap: 12px;">
+        <div style="flex: 1; background: rgba(244,244,244,0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--cds-border-subtle); border-radius: 8px; padding: 14px; text-align: center; font-size: 14px; color: var(--cds-text-secondary); font-weight: 500; min-height: 48px; display: flex; align-items: center; justify-content: center;">
+          Try Again
+        </div>
+        <div style="flex: 1; background: rgba(25,128,56,0.06); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(25,128,56,0.2); border-radius: 8px; padding: 14px; text-align: center; font-size: 14px; color: var(--cds-support-success); font-weight: 600; min-height: 48px; display: flex; align-items: center; justify-content: center;">
+          Share
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Not Dumpling + Full Mode -->
+<div class="split" style="gap: 32px; align-items: flex-start; margin-top: 32px;">
+
+  <!-- Not Dumpling -->
+  <div class="mockup">
+    <div class="mockup-header" style="font-family: 'Inter', sans-serif !important;">Not Dumpling</div>
+    <div class="mockup-body" style="padding: 0; background: var(--cds-background); height: 360px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 32px;">
+        <!-- Error accent -->
+        <div style="width: 32px; height: 3px; background: var(--cds-support-error); margin-bottom: 28px; border-radius: 1px;"></div>
+
+        <div style="font-weight: 200; font-size: 38px; color: var(--cds-text-primary); letter-spacing: -2px; line-height: 1;">
+          not dumpling.
+        </div>
+
+        <div class="mono" style="font-size: 13px; color: var(--cds-support-error); margin-top: 16px; font-weight: 500;">
+          confidence: 0.99
+        </div>
+
+        <!-- Glass button -->
+        <div style="margin-top: 32px; background: rgba(244,244,244,0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--cds-border-subtle); border-radius: 8px; padding: 14px 40px; font-size: 14px; color: var(--cds-text-secondary); font-weight: 500; min-height: 48px; display: flex; align-items: center; justify-content: center;">
+          Try Again
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Mode -->
+  <div class="mockup">
+    <div class="mockup-header" style="font-family: 'Inter', sans-serif !important;">Full Mode — Type Identified</div>
+    <div class="mockup-body" style="padding: 0; background: var(--cds-background); height: 360px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 32px;">
+        <!-- Info accent (blue) -->
+        <div style="width: 32px; height: 3px; background: var(--cds-support-info); margin-bottom: 28px; border-radius: 1px;"></div>
+
+        <div style="font-weight: 200; font-size: 38px; color: var(--cds-text-primary); letter-spacing: -2px; line-height: 1;">
+          xiaolongbao.
+        </div>
+
+        <div class="mono" style="font-size: 12px; color: var(--cds-support-info); margin-top: 16px; font-weight: 500;">
+          confidence: 0.94
+        </div>
+
+        <!-- Glass pills — secondary matches -->
+        <div style="display: flex; gap: 8px; margin-top: 20px;">
+          <div style="background: rgba(244,244,244,0.8); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--cds-border-subtle); border-radius: 8px; padding: 8px 16px; font-size: 12px; color: var(--cds-text-secondary); font-weight: 400;">
+            gyoza <span class="mono" style="color: var(--cds-text-placeholder); font-size: 11px;">0.04</span>
+          </div>
+          <div style="background: rgba(244,244,244,0.8); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--cds-border-subtle); border-radius: 8px; padding: 8px 16px; font-size: 12px; color: var(--cds-text-secondary); font-weight: 400;">
+            momo <span class="mono" style="color: var(--cds-text-placeholder); font-size: 11px;">0.02</span>
+          </div>
+        </div>
+
+        <!-- Action buttons -->
+        <div style="display: flex; gap: 12px; margin-top: 28px;">
+          <div style="background: rgba(244,244,244,0.8); backdrop-filter: blur(20px); border: 1px solid var(--cds-border-subtle); border-radius: 8px; padding: 14px 24px; font-size: 14px; color: var(--cds-text-secondary); font-weight: 500; min-height: 48px; display: flex; align-items: center;">Try Again</div>
+          <div style="background: rgba(0,67,206,0.06); backdrop-filter: blur(20px); border: 1px solid rgba(0,67,206,0.2); border-radius: 8px; padding: 14px 24px; font-size: 14px; color: var(--cds-support-info); font-weight: 600; min-height: 48px; display: flex; align-items: center;">Share</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="options" style="margin-top: 32px;">
+  <div class="option" data-choice="approve" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>This is it</h3>
+      <p>Carbon + Inter + liquid glass nails it</p>
+    </div>
+  </div>
+  <div class="option" data-choice="iterate" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Needs changes</h3>
+      <p>I'll describe what to adjust</p>
+    </div>
+  </div>
+</div>

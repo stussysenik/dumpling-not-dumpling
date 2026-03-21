@@ -1,0 +1,178 @@
+<h2>iPhone UI — Liquid Glass + HCI Ergonomics</h2>
+<p class="subtitle">Translucent materials, proper spacing, thumb-zone-aware layout</p>
+
+<!-- HCI Constraints callout -->
+<div style="background: rgba(255,255,255,0.04); border: 1px solid #333; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
+  <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px;">HCI Design Constraints</div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; color: #aaa; font-family: system-ui;">
+    <div>Tap targets: min 44x44pt</div>
+    <div>Primary actions in thumb zone (bottom 1/3)</div>
+    <div>No overlapping elements</div>
+    <div>Content hierarchy: top-down reading flow</div>
+    <div>Gestalt proximity: grouped by function</div>
+    <div>Fitt's law: large targets for frequent actions</div>
+  </div>
+</div>
+
+<div class="split" style="gap: 32px; align-items: flex-start;">
+
+  <!-- Screen 1: Camera View -->
+  <div class="mockup">
+    <div class="mockup-header">Camera View</div>
+    <div class="mockup-body" style="padding: 0; background: #F2F2F7; height: 620px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+
+      <!-- Camera feed area - full bleed, rounded -->
+      <div style="margin: 16px; border-radius: 24px; background: #E5E5EA; height: 340px; display: flex; align-items: center; justify-content: center; position: relative;">
+        <div style="color: #8E8E93; font-size: 14px; font-family: system-ui;">Camera Feed</div>
+        <!-- Subtle corner brackets -->
+        <div style="position: absolute; top: 24px; left: 24px; width: 28px; height: 28px; border-top: 2.5px solid rgba(0,0,0,0.12); border-left: 2.5px solid rgba(0,0,0,0.12); border-radius: 6px 0 0 0;"></div>
+        <div style="position: absolute; top: 24px; right: 24px; width: 28px; height: 28px; border-top: 2.5px solid rgba(0,0,0,0.12); border-right: 2.5px solid rgba(0,0,0,0.12); border-radius: 0 6px 0 0;"></div>
+        <div style="position: absolute; bottom: 24px; left: 24px; width: 28px; height: 28px; border-bottom: 2.5px solid rgba(0,0,0,0.12); border-left: 2.5px solid rgba(0,0,0,0.12); border-radius: 0 0 0 6px;"></div>
+        <div style="position: absolute; bottom: 24px; right: 24px; width: 28px; height: 28px; border-bottom: 2.5px solid rgba(0,0,0,0.12); border-right: 2.5px solid rgba(0,0,0,0.12); border-radius: 0 0 6px 0;"></div>
+      </div>
+
+      <!-- Mode toggle — glass pill, clear spacing below camera -->
+      <div style="display: flex; justify-content: center; margin-top: 16px;">
+        <div style="display: flex; background: rgba(0,0,0,0.04); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0,0,0,0.06); border-radius: 22px; padding: 4px;">
+          <div style="background: rgba(0,0,0,0.85); color: #fff; border-radius: 18px; padding: 8px 22px; font-size: 14px; font-weight: 600; font-family: system-ui;">Party</div>
+          <div style="color: #8E8E93; border-radius: 18px; padding: 8px 22px; font-size: 14px; font-weight: 500; font-family: system-ui;">Full</div>
+        </div>
+      </div>
+
+      <!-- Bottom controls — thumb zone, clear separation, no overlap -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 40px 40px; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(180deg, rgba(242,242,247,0) 0%, rgba(242,242,247,1) 30%);">
+        <!-- Photo library (44x44 min tap) -->
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(0,0,0,0.04); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0,0,0,0.06);"></div>
+
+        <!-- Capture button (large, Fitt's law) -->
+        <div style="width: 76px; height: 76px; border-radius: 50%; background: rgba(255,255,255,0.8); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border: 3px solid rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 20px rgba(0,0,0,0.08);">
+          <div style="width: 62px; height: 62px; border-radius: 50%; background: #000;"></div>
+        </div>
+
+        <!-- Live toggle (44x44 min tap) -->
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(16,185,129,0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 2px solid #10B981; display: flex; align-items: center; justify-content: center;">
+            <div style="width: 10px; height: 10px; border-radius: 50%; background: #10B981;"></div>
+          </div>
+          <div style="font-size: 10px; color: #10B981; font-family: ui-monospace; font-weight: 600; letter-spacing: 1px; margin-top: 4px;">LIVE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 2: Dumpling Result -->
+  <div class="mockup">
+    <div class="mockup-header">Result — Dumpling!</div>
+    <div class="mockup-body" style="padding: 0; background: #FFFFFF; height: 620px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+
+      <!-- Captured image area — clear top section -->
+      <div style="margin: 16px; border-radius: 24px; background: #F2F2F7; height: 280px; display: flex; align-items: center; justify-content: center;">
+        <div style="font-size: 80px;">🥟</div>
+      </div>
+
+      <!-- Result section — glass card, generous spacing -->
+      <div style="margin: 0 16px; padding: 28px 24px; text-align: center;">
+        <!-- Green accent -->
+        <div style="width: 40px; height: 3px; background: #10B981; margin: 0 auto 24px; border-radius: 2px;"></div>
+
+        <div style="font-family: system-ui; font-weight: 200; font-size: 44px; color: #000; letter-spacing: -2px;">
+          dumpling.
+        </div>
+
+        <div style="font-family: ui-monospace, monospace; font-size: 13px; color: #10B981; margin-top: 16px; font-weight: 500;">
+          confidence: 0.97
+        </div>
+      </div>
+
+      <!-- Action buttons — in thumb zone, glass style, min 44pt height -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 20px 40px; display: flex; gap: 12px;">
+        <div style="flex: 1; background: rgba(0,0,0,0.04); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 14px; text-align: center; font-size: 15px; color: #3C3C43; font-family: system-ui; font-weight: 500; min-height: 44px; display: flex; align-items: center; justify-content: center;">
+          Try Again
+        </div>
+        <div style="flex: 1; background: rgba(16,185,129,0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(16,185,129,0.15); border-radius: 16px; padding: 14px; text-align: center; font-size: 15px; color: #10B981; font-family: system-ui; font-weight: 600; min-height: 44px; display: flex; align-items: center; justify-content: center;">
+          Share
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Not Dumpling + Full Mode -->
+<div class="split" style="gap: 32px; align-items: flex-start; margin-top: 32px;">
+
+  <!-- Not Dumpling -->
+  <div class="mockup">
+    <div class="mockup-header">Not Dumpling</div>
+    <div class="mockup-body" style="padding: 0; background: #FFFFFF; height: 380px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 32px;">
+        <!-- Red accent -->
+        <div style="width: 40px; height: 3px; background: #EF4444; margin-bottom: 28px; border-radius: 2px;"></div>
+
+        <div style="font-family: system-ui; font-weight: 200; font-size: 38px; color: #000; letter-spacing: -2px;">
+          not dumpling.
+        </div>
+
+        <div style="font-family: ui-monospace, monospace; font-size: 13px; color: #EF4444; margin-top: 16px; font-weight: 500;">
+          confidence: 0.99
+        </div>
+
+        <!-- Button in comfortable thumb position -->
+        <div style="margin-top: 32px; background: rgba(0,0,0,0.04); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 14px 40px; font-size: 15px; color: #3C3C43; font-family: system-ui; font-weight: 500; min-height: 44px; display: flex; align-items: center; justify-content: center;">
+          Try Again
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Mode -->
+  <div class="mockup">
+    <div class="mockup-header">Full Mode — Type Identified</div>
+    <div class="mockup-body" style="padding: 0; background: #FFFFFF; height: 380px; position: relative; overflow: hidden; border-radius: 0 0 8px 8px;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 32px;">
+        <!-- Blue accent for identification -->
+        <div style="width: 40px; height: 3px; background: #3B82F6; margin-bottom: 28px; border-radius: 2px;"></div>
+
+        <div style="font-family: system-ui; font-weight: 200; font-size: 38px; color: #000; letter-spacing: -2px;">
+          xiaolongbao.
+        </div>
+
+        <div style="font-family: ui-monospace, monospace; font-size: 12px; color: #3B82F6; margin-top: 16px; font-weight: 500;">
+          confidence: 0.94
+        </div>
+
+        <!-- Glass pills for secondary matches -->
+        <div style="display: flex; gap: 8px; margin-top: 20px;">
+          <div style="background: rgba(0,0,0,0.03); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,0.06); border-radius: 12px; padding: 8px 16px; font-size: 12px; color: #8E8E93; font-family: system-ui;">
+            gyoza · 0.04
+          </div>
+          <div style="background: rgba(0,0,0,0.03); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,0.06); border-radius: 12px; padding: 8px 16px; font-size: 12px; color: #8E8E93; font-family: system-ui;">
+            momo · 0.02
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div style="display: flex; gap: 12px; margin-top: 28px;">
+          <div style="background: rgba(0,0,0,0.04); backdrop-filter: blur(20px); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 14px 28px; font-size: 15px; color: #3C3C43; font-family: system-ui; font-weight: 500; min-height: 44px; display: flex; align-items: center;">Try Again</div>
+          <div style="background: rgba(59,130,246,0.08); backdrop-filter: blur(20px); border: 1px solid rgba(59,130,246,0.15); border-radius: 16px; padding: 14px 28px; font-size: 15px; color: #3B82F6; font-family: system-ui; font-weight: 600; min-height: 44px; display: flex; align-items: center;">Share</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options" style="margin-top: 32px;">
+  <div class="option" data-choice="approve" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>This is it</h3>
+      <p>Liquid glass, clean spacing, ergonomic layout</p>
+    </div>
+  </div>
+  <div class="option" data-choice="iterate" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Needs more work</h3>
+      <p>I'll describe what to change</p>
+    </div>
+  </div>
+</div>

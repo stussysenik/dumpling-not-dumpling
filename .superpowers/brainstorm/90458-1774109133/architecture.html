@@ -1,0 +1,122 @@
+<h2>Core Architecture</h2>
+<p class="subtitle">How the pieces fit together across all Apple platforms</p>
+
+<div class="mockup" style="margin-bottom: 32px;">
+  <div class="mockup-header">System Architecture</div>
+  <div class="mockup-body" style="padding: 24px;">
+    <!-- Architecture Diagram -->
+    <div style="display: flex; flex-direction: column; gap: 20px; font-family: system-ui;">
+
+      <!-- Input Layer -->
+      <div style="text-align: center;">
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px;">Input Layer</div>
+        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 120px;">
+            <div style="font-size: 24px; margin-bottom: 4px;">📷</div>
+            <div style="font-size: 13px; color: #ccc; font-weight: 600;">Live Camera</div>
+            <div style="font-size: 10px; color: #666; margin-top: 2px;">iPhone / iPad / Mac</div>
+          </div>
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 120px;">
+            <div style="font-size: 24px; margin-bottom: 4px;">🖼️</div>
+            <div style="font-size: 13px; color: #ccc; font-weight: 600;">Photo Library</div>
+            <div style="font-size: 10px; color: #666; margin-top: 2px;">All Platforms</div>
+          </div>
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 120px;">
+            <div style="font-size: 24px; margin-bottom: 4px;">⚡</div>
+            <div style="font-size: 13px; color: #ccc; font-weight: 600;">Continuous Feed</div>
+            <div style="font-size: 10px; color: #666; margin-top: 2px;">iPhone / iPad</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div style="text-align: center; color: #4ADE80; font-size: 20px;">↓</div>
+
+      <!-- Processing Layer -->
+      <div style="text-align: center;">
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px;">Processing Layer</div>
+        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+          <div style="background: #0a2a1a; border: 1px solid #4ADE80; border-radius: 12px; padding: 16px 24px; min-width: 180px;">
+            <div style="font-size: 14px; color: #4ADE80; font-weight: 700;">CameraService</div>
+            <div style="font-size: 11px; color: #888; margin-top: 4px;">AVCaptureSession management</div>
+            <div style="font-size: 11px; color: #888;">Platform-aware input handling</div>
+          </div>
+          <div style="background: #0a2a1a; border: 1px solid #4ADE80; border-radius: 12px; padding: 16px 24px; min-width: 180px;">
+            <div style="font-size: 14px; color: #4ADE80; font-weight: 700;">ClassificationService</div>
+            <div style="font-size: 11px; color: #888; margin-top: 4px;">VNCoreMLRequest wrapper</div>
+            <div style="font-size: 11px; color: #888;">Throttled at ~5fps for live</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div style="text-align: center; color: #4ADE80; font-size: 20px;">↓</div>
+
+      <!-- ML Layer -->
+      <div style="text-align: center;">
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px;">ML Model</div>
+        <div style="display: inline-block; background: linear-gradient(135deg, #1a0a2e, #2a1a3e); border: 1px solid #A78BFA; border-radius: 12px; padding: 16px 32px;">
+          <div style="font-size: 15px; color: #A78BFA; font-weight: 700;">DumplingClassifier.mlmodel</div>
+          <div style="font-size: 11px; color: #888; margin-top: 6px;">CreateML Image Classifier</div>
+          <div style="display: flex; gap: 16px; margin-top: 10px; justify-content: center;">
+            <div style="background: rgba(167,139,250,0.15); border-radius: 8px; padding: 6px 12px;">
+              <div style="font-size: 10px; color: #A78BFA; font-weight: 600;">Party Mode</div>
+              <div style="font-size: 10px; color: #888;">dumpling / not_dumpling</div>
+            </div>
+            <div style="background: rgba(167,139,250,0.15); border-radius: 8px; padding: 6px 12px;">
+              <div style="font-size: 10px; color: #A78BFA; font-weight: 600;">Full Mode</div>
+              <div style="font-size: 10px; color: #888;">gyoza, pierogi, momo...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div style="text-align: center; color: #4ADE80; font-size: 20px;">↓</div>
+
+      <!-- Output Layer -->
+      <div style="text-align: center;">
+        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px;">Presentation Layer</div>
+        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 100px;">
+            <div style="font-size: 20px; margin-bottom: 4px;">📱</div>
+            <div style="font-size: 12px; color: #ccc; font-weight: 600;">iPhone</div>
+            <div style="font-size: 10px; color: #666;">Full experience</div>
+          </div>
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 100px;">
+            <div style="font-size: 20px; margin-bottom: 4px;">📱</div>
+            <div style="font-size: 12px; color: #ccc; font-weight: 600;">iPad</div>
+            <div style="font-size: 10px; color: #666;">Adapted layout</div>
+          </div>
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 100px;">
+            <div style="font-size: 20px; margin-bottom: 4px;">⌚</div>
+            <div style="font-size: 12px; color: #ccc; font-weight: 600;">Watch</div>
+            <div style="font-size: 10px; color: #666;">Results + picker</div>
+          </div>
+          <div style="background: #1a1a2e; border: 1px solid #333; border-radius: 12px; padding: 12px 20px; min-width: 100px;">
+            <div style="font-size: 20px; margin-bottom: 4px;">💻</div>
+            <div style="font-size: 12px; color: #ccc; font-weight: 600;">macOS</div>
+            <div style="font-size: 10px; color: #666;">Camera + picker</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="approve" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Looks good, continue</h3>
+      <p>Move on to the UI design section</p>
+    </div>
+  </div>
+  <div class="option" data-choice="simplify" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Simplify it</h3>
+      <p>Too many layers — I want something leaner</p>
+    </div>
+  </div>
+</div>
