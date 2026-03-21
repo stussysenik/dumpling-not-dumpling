@@ -1,0 +1,19 @@
+# Xcode
+*.xcodeproj/
+xcuserdata/
+*.xcworkspace/
+build/
+DerivedData/
+.swiftpm/
+
+# macOS
+.DS_Store
+.superpowers/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# CoreML compiled
+*.mlmodelc/
