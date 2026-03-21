@@ -1,0 +1,8 @@
+appId: com.dumpling.app
+
+---
+- launchApp
+- assertVisible: "Party"
+- assertVisible: "Full"
+- tapOn: "Full"
+- tapOn: "Party"

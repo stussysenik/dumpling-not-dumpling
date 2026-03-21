@@ -1,0 +1,16 @@
+appId: com.dumpling.app
+
+---
+- launchApp
+
+# Verify main UI elements
+- assertVisible: "Party"
+- assertVisible: "Full"
+- assertVisible: "LIVE"
+
+# Switch modes
+- tapOn: "Full"
+- tapOn: "Party"
+
+# Take a screenshot for visual verification
+- takeScreenshot: full-flow-screenshot
