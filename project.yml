@@ -19,9 +19,8 @@ targets:
       - path: DumplingNotDumpling
         excludes:
           - "**/*.mlmodel"
-    resources:
       - path: DumplingNotDumpling/Models/DumplingClassifier.mlmodel
-        optional: true
+    resources:
       - path: DumplingNotDumpling/Resources
     settings:
       base:
