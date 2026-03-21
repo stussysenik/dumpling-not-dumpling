@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30014B0DE5DA255C36D4945C /* DumplingNotDumplingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */; };
+		4CE989CC9A8B1C8CE24F4E07 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E23762E6E32FD870225BBE /* WatchApp.swift */; };
+		65C10608475DE00849D2A62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22CD863B0801B35835034C5 /* Assets.xcassets */; };
+		A0F3EC925670F3958E1FBABF /* DumplingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CB1B387964D085FE15A3F /* DumplingApp.swift */; };
+		AE6E51047901456066B01C18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC5AB764A535E9AF8725 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		232C26AF052FEC5ADFA633D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B617238D0C7F296BBB45ACD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BEB1C43258FE36E9FD64116;
+			remoteInfo = DumplingNotDumpling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF0CC1E9067D72CCB8B9E1F /* DumplingNotDumpling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DumplingNotDumpling.entitlements; sourceTree = "<group>"; };
+		8BB990131B4D58F1282C01FB /* DumplingNotDumplingTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DumplingNotDumplingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12CB1B387964D085FE15A3F /* DumplingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumplingApp.swift; sourceTree = "<group>"; };
+		A22CD863B0801B35835034C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B209C2C7ACB5EF19EC750EA5 /* DumplingNotDumpling.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DumplingNotDumpling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB97DC5AB764A535E9AF8725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC1554077CCF2D89A7B4830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumplingNotDumplingTests.swift; sourceTree = "<group>"; };
+		C2E23762E6E32FD870225BBE /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
+		CDF7CC9E7ACBCC6A0A302BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE450CBF31B4F6207B794175 /* DumplingWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DumplingWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0826E6E0A9F0DDDFF3249ACF /* DumplingNotDumpling */ = {
+			isa = PBXGroup;
+			children = (
+				0CF0CC1E9067D72CCB8B9E1F /* DumplingNotDumpling.entitlements */,
+				CDF7CC9E7ACBCC6A0A302BBE /* Info.plist */,
+				9434E269733474C7491A42BE /* App */,
+				70159B8BDD2E18452BEDF3DA /* Resources */,
+			);
+			path = DumplingNotDumpling;
+			sourceTree = "<group>";
+		};
+		0AAE74F7F1BA503F02A32080 /* DumplingWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BC1554077CCF2D89A7B4830F /* Info.plist */,
+				C2E23762E6E32FD870225BBE /* WatchApp.swift */,
+			);
+			path = DumplingWatch;
+			sourceTree = "<group>";
+		};
+		20E4DDCDD957623C96543B50 /* DumplingNotDumplingTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */,
+			);
+			path = DumplingNotDumplingTests;
+			sourceTree = "<group>";
+		};
+		4B1B9D5BB5121D687420C5E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B209C2C7ACB5EF19EC750EA5 /* DumplingNotDumpling.app */,
+				8BB990131B4D58F1282C01FB /* DumplingNotDumplingTests.xctest */,
+				CE450CBF31B4F6207B794175 /* DumplingWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70159B8BDD2E18452BEDF3DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A22CD863B0801B35835034C5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9434E269733474C7491A42BE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB97DC5AB764A535E9AF8725 /* ContentView.swift */,
+				A12CB1B387964D085FE15A3F /* DumplingApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F6F91D3114B73E10AD3D2DA1 = {
+			isa = PBXGroup;
+			children = (
+				0826E6E0A9F0DDDFF3249ACF /* DumplingNotDumpling */,
+				20E4DDCDD957623C96543B50 /* DumplingNotDumplingTests */,
+				0AAE74F7F1BA503F02A32080 /* DumplingWatch */,
+				4B1B9D5BB5121D687420C5E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"TEMP_752280D0-D53C-43F7-8C6B-EA2093B1ABA3" /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D2E0349B7349EB7DAE5B586 /* DumplingWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E445D23F33F0902A3583C59 /* Build configuration list for PBXNativeTarget "DumplingWatch" */;
+			buildPhases = (
+				1D19617A4FBE405A2118CF99 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DumplingWatch;
+			packageProductDependencies = (
+			);
+			productName = DumplingWatch;
+			productReference = CE450CBF31B4F6207B794175 /* DumplingWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BEB1C43258FE36E9FD64116 /* DumplingNotDumpling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8093C69515E96964AEA1B743 /* Build configuration list for PBXNativeTarget "DumplingNotDumpling" */;
+			buildPhases = (
+				3105E7E0176E11E3662BD794 /* Sources */,
+				FFFB1F9891E93BBDF620C1C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DumplingNotDumpling;
+			packageProductDependencies = (
+			);
+			productName = DumplingNotDumpling;
+			productReference = B209C2C7ACB5EF19EC750EA5 /* DumplingNotDumpling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E1B0F9E8250056FB57BAA1D /* DumplingNotDumplingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA933CAA7800F6FFE07C435F /* Build configuration list for PBXNativeTarget "DumplingNotDumplingTests" */;
+			buildPhases = (
+				A1469B91CAED0D71E07EB992 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D482BD29BE80A242E4B80B9 /* PBXTargetDependency */,
+			);
+			name = DumplingNotDumplingTests;
+			packageProductDependencies = (
+			);
+			productName = DumplingNotDumplingTests;
+			productReference = 8BB990131B4D58F1282C01FB /* DumplingNotDumplingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B617238D0C7F296BBB45ACD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 572F1F799A5DB337F7FC5AA6 /* Build configuration list for PBXProject "DumplingNotDumpling" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F6F91D3114B73E10AD3D2DA1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4B1B9D5BB5121D687420C5E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BEB1C43258FE36E9FD64116 /* DumplingNotDumpling */,
+				6E1B0F9E8250056FB57BAA1D /* DumplingNotDumplingTests */,
+				4D2E0349B7349EB7DAE5B586 /* DumplingWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFFB1F9891E93BBDF620C1C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C10608475DE00849D2A62E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D19617A4FBE405A2118CF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE989CC9A8B1C8CE24F4E07 /* WatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3105E7E0176E11E3662BD794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6E51047901456066B01C18 /* ContentView.swift in Sources */,
+				A0F3EC925670F3958E1FBABF /* DumplingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1469B91CAED0D71E07EB992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30014B0DE5DA255C36D4945C /* DumplingNotDumplingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D482BD29BE80A242E4B80B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BEB1C43258FE36E9FD64116 /* DumplingNotDumpling */;
+			targetProxy = 232C26AF052FEC5ADFA633D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C261EE0B8CF3DE4EA0BC358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DumplingWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		571BE3C0FCF0FD78A5CCC0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		5E03673C564F953168C665D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DumplingNotDumpling/DumplingNotDumpling.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DumplingNotDumpling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.app;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72556E0A2A19960B454E610F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DumplingWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		75518928835276997650D632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.DumplingNotDumplingTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumplingNotDumpling.app/DumplingNotDumpling";
+			};
+			name = Release;
+		};
+		779636499517816339C403ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		A3F8EDB669A02FAAC47AB169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.DumplingNotDumplingTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumplingNotDumpling.app/DumplingNotDumpling";
+			};
+			name = Debug;
+		};
+		D7B462DD15A451E05DF30930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DumplingNotDumpling/DumplingNotDumpling.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DumplingNotDumpling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.app;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E445D23F33F0902A3583C59 /* Build configuration list for PBXNativeTarget "DumplingWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72556E0A2A19960B454E610F /* Debug */,
+				4C261EE0B8CF3DE4EA0BC358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		572F1F799A5DB337F7FC5AA6 /* Build configuration list for PBXProject "DumplingNotDumpling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571BE3C0FCF0FD78A5CCC0D4 /* Debug */,
+				779636499517816339C403ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8093C69515E96964AEA1B743 /* Build configuration list for PBXNativeTarget "DumplingNotDumpling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B462DD15A451E05DF30930 /* Debug */,
+				5E03673C564F953168C665D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA933CAA7800F6FFE07C435F /* Build configuration list for PBXNativeTarget "DumplingNotDumplingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F8EDB669A02FAAC47AB169 /* Debug */,
+				75518928835276997650D632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B617238D0C7F296BBB45ACD8 /* Project object */;
+}

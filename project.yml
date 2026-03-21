@@ -1,0 +1,77 @@
+name: DumplingNotDumpling
+options:
+  bundleIdPrefix: com.dumpling
+  deploymentTarget:
+    iOS: "26.0"
+    macOS: "26.0"
+    watchOS: "12.0"
+  xcodeVersion: "26.3"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+
+targets:
+  DumplingNotDumpling:
+    type: application
+    supportedDestinations: [iOS, macOS]
+    sources:
+      - path: DumplingNotDumpling
+        excludes:
+          - "**/*.mlmodel"
+    resources:
+      - path: DumplingNotDumpling/Models/DumplingClassifier.mlmodel
+        optional: true
+      - path: DumplingNotDumpling/Resources
+    settings:
+      base:
+        INFOPLIST_FILE: DumplingNotDumpling/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.dumpling.app
+    entitlements:
+      path: DumplingNotDumpling/DumplingNotDumpling.entitlements
+      properties:
+        com.apple.security.device.camera: true
+
+  DumplingWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - path: DumplingWatch
+      # Shared files from main app — will be uncommented when created in later tasks
+      # - path: DumplingNotDumpling/Models/ClassificationResult.swift
+      # - path: DumplingNotDumpling/Services/ClassificationService.swift
+      # - path: DumplingNotDumpling/Views/Components/DesignTokens.swift
+      # - path: DumplingNotDumpling/Views/Components/ConfidenceLabel.swift
+    resources:
+      - path: DumplingNotDumpling/Models/DumplingClassifier.mlmodel
+        optional: true
+    settings:
+      base:
+        INFOPLIST_FILE: DumplingWatch/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.dumpling.watch
+
+  DumplingNotDumplingTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: DumplingNotDumplingTests
+    dependencies:
+      - target: DumplingNotDumpling
+
+schemes:
+  DumplingNotDumpling:
+    build:
+      targets:
+        DumplingNotDumpling: all
+    run:
+      config: Debug
+    test:
+      targets:
+        - DumplingNotDumplingTests
+
+  DumplingWatch:
+    build:
+      targets:
+        DumplingWatch: all
+    run:
+      config: Debug
