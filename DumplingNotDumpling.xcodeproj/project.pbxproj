@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5A62D4182BAA592FF8616F /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BE3EA47F50846331C9A0B /* DesignTokens.swift */; };
 		30014B0DE5DA255C36D4945C /* DumplingNotDumplingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */; };
 		4CE989CC9A8B1C8CE24F4E07 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E23762E6E32FD870225BBE /* WatchApp.swift */; };
+		5259D3C2DBFB34423096D1F6 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 898197FB7AB6B05F954DE48C /* Inter-Regular.ttf */; };
 		65C10608475DE00849D2A62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22CD863B0801B35835034C5 /* Assets.xcassets */; };
 		A0F3EC925670F3958E1FBABF /* DumplingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CB1B387964D085FE15A3F /* DumplingApp.swift */; };
+		A5929ACB22F6F1FE2C924C93 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B505D42F7BCC6DF9DD2C0C96 /* Inter-ExtraLight.ttf */; };
 		A96B0E1B0035345101F8CC1B /* ClassificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1798A1D8AFEA83BA7FC1D973 /* ClassificationResult.swift */; };
 		AA92858918709534E004348C /* ClassificationResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D4BCD8D94C0070CD29540 /* ClassificationResultTests.swift */; };
 		AE6E51047901456066B01C18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC5AB764A535E9AF8725 /* ContentView.swift */; };
+		B0C5570F473ADEDC3E6A2927 /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9180D00A240FAADD575AB70 /* IBMPlexMono-Medium.ttf */; };
+		DB6A35356A4432507AB0162C /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 937C94F0543C514ABBE7B3D7 /* Inter-Medium.ttf */; };
+		E582FF1DDB13610921F43558 /* DesignTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1D4F6426DED51BB5B716F /* DesignTokenTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +36,22 @@
 		0CF0CC1E9067D72CCB8B9E1F /* DumplingNotDumpling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DumplingNotDumpling.entitlements; sourceTree = "<group>"; };
 		1798A1D8AFEA83BA7FC1D973 /* ClassificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResult.swift; sourceTree = "<group>"; };
 		688D4BCD8D94C0070CD29540 /* ClassificationResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResultTests.swift; sourceTree = "<group>"; };
+		898197FB7AB6B05F954DE48C /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		8BB990131B4D58F1282C01FB /* DumplingNotDumplingTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DumplingNotDumplingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		937C94F0543C514ABBE7B3D7 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		A12CB1B387964D085FE15A3F /* DumplingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumplingApp.swift; sourceTree = "<group>"; };
 		A22CD863B0801B35835034C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B209C2C7ACB5EF19EC750EA5 /* DumplingNotDumpling.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DumplingNotDumpling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B505D42F7BCC6DF9DD2C0C96 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B9180D00A240FAADD575AB70 /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
 		BB97DC5AB764A535E9AF8725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC1554077CCF2D89A7B4830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumplingNotDumplingTests.swift; sourceTree = "<group>"; };
 		C2E23762E6E32FD870225BBE /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
 		CDF7CC9E7ACBCC6A0A302BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE450CBF31B4F6207B794175 /* DumplingWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DumplingWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E1D4F6426DED51BB5B716F /* DesignTokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokenTests.swift; sourceTree = "<group>"; };
+		EC5BE3EA47F50846331C9A0B /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -51,6 +63,7 @@
 				9434E269733474C7491A42BE /* App */,
 				E875FF5A30EBCB85B89D4A5A /* Models */,
 				70159B8BDD2E18452BEDF3DA /* Resources */,
+				E470A31186F50161E2E92961 /* Views */,
 			);
 			path = DumplingNotDumpling;
 			sourceTree = "<group>";
@@ -68,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				688D4BCD8D94C0070CD29540 /* ClassificationResultTests.swift */,
+				E5E1D4F6426DED51BB5B716F /* DesignTokenTests.swift */,
 				BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */,
 			);
 			path = DumplingNotDumplingTests;
@@ -87,8 +101,20 @@
 			isa = PBXGroup;
 			children = (
 				A22CD863B0801B35835034C5 /* Assets.xcassets */,
+				B9180D00A240FAADD575AB70 /* IBMPlexMono-Medium.ttf */,
+				B505D42F7BCC6DF9DD2C0C96 /* Inter-ExtraLight.ttf */,
+				937C94F0543C514ABBE7B3D7 /* Inter-Medium.ttf */,
+				898197FB7AB6B05F954DE48C /* Inter-Regular.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		87F1DF985443ACA51CD861D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EC5BE3EA47F50846331C9A0B /* DesignTokens.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		9434E269733474C7491A42BE /* App */ = {
@@ -98,6 +124,14 @@
 				A12CB1B387964D085FE15A3F /* DumplingApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		E470A31186F50161E2E92961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87F1DF985443ACA51CD861D2 /* Components */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E875FF5A30EBCB85B89D4A5A /* Models */ = {
@@ -116,13 +150,6 @@
 				0AAE74F7F1BA503F02A32080 /* DumplingWatch */,
 				4B1B9D5BB5121D687420C5E7 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		"TEMP_8C31FFF8-A6EF-485F-A515-02BA472E2044" /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C10608475DE00849D2A62E /* Assets.xcassets in Resources */,
+				B0C5570F473ADEDC3E6A2927 /* IBMPlexMono-Medium.ttf in Resources */,
+				A5929ACB22F6F1FE2C924C93 /* Inter-ExtraLight.ttf in Resources */,
+				DB6A35356A4432507AB0162C /* Inter-Medium.ttf in Resources */,
+				5259D3C2DBFB34423096D1F6 /* Inter-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +270,7 @@
 			files = (
 				A96B0E1B0035345101F8CC1B /* ClassificationResult.swift in Sources */,
 				AE6E51047901456066B01C18 /* ContentView.swift in Sources */,
+				0E5A62D4182BAA592FF8616F /* DesignTokens.swift in Sources */,
 				A0F3EC925670F3958E1FBABF /* DumplingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA92858918709534E004348C /* ClassificationResultTests.swift in Sources */,
+				E582FF1DDB13610921F43558 /* DesignTokenTests.swift in Sources */,
 				30014B0DE5DA255C36D4945C /* DumplingNotDumplingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

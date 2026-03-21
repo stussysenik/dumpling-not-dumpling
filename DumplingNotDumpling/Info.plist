@@ -22,5 +22,14 @@
     <string>Select photos to classify as dumpling or not</string>
     <key>UILaunchScreen</key>
     <dict/>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Inter-ExtraLight.ttf</string>
+        <string>Inter-Regular.ttf</string>
+        <string>Inter-Medium.ttf</string>
+        <string>IBMPlexMono-Medium.ttf</string>
+    </array>
+    <key>ATSApplicationFontsPath</key>
+    <string>.</string>
 </dict>
 </plist>
