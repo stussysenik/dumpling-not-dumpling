@@ -11,6 +11,8 @@
 		4CE989CC9A8B1C8CE24F4E07 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E23762E6E32FD870225BBE /* WatchApp.swift */; };
 		65C10608475DE00849D2A62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22CD863B0801B35835034C5 /* Assets.xcassets */; };
 		A0F3EC925670F3958E1FBABF /* DumplingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CB1B387964D085FE15A3F /* DumplingApp.swift */; };
+		A96B0E1B0035345101F8CC1B /* ClassificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1798A1D8AFEA83BA7FC1D973 /* ClassificationResult.swift */; };
+		AA92858918709534E004348C /* ClassificationResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D4BCD8D94C0070CD29540 /* ClassificationResultTests.swift */; };
 		AE6E51047901456066B01C18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97DC5AB764A535E9AF8725 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		0CF0CC1E9067D72CCB8B9E1F /* DumplingNotDumpling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DumplingNotDumpling.entitlements; sourceTree = "<group>"; };
+		1798A1D8AFEA83BA7FC1D973 /* ClassificationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResult.swift; sourceTree = "<group>"; };
+		688D4BCD8D94C0070CD29540 /* ClassificationResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResultTests.swift; sourceTree = "<group>"; };
 		8BB990131B4D58F1282C01FB /* DumplingNotDumplingTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DumplingNotDumplingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12CB1B387964D085FE15A3F /* DumplingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumplingApp.swift; sourceTree = "<group>"; };
 		A22CD863B0801B35835034C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 				0CF0CC1E9067D72CCB8B9E1F /* DumplingNotDumpling.entitlements */,
 				CDF7CC9E7ACBCC6A0A302BBE /* Info.plist */,
 				9434E269733474C7491A42BE /* App */,
+				E875FF5A30EBCB85B89D4A5A /* Models */,
 				70159B8BDD2E18452BEDF3DA /* Resources */,
 			);
 			path = DumplingNotDumpling;
@@ -62,6 +67,7 @@
 		20E4DDCDD957623C96543B50 /* DumplingNotDumplingTests */ = {
 			isa = PBXGroup;
 			children = (
+				688D4BCD8D94C0070CD29540 /* ClassificationResultTests.swift */,
 				BD2F16637F9C5AFBF7CAED3C /* DumplingNotDumplingTests.swift */,
 			);
 			path = DumplingNotDumplingTests;
@@ -94,6 +100,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E875FF5A30EBCB85B89D4A5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1798A1D8AFEA83BA7FC1D973 /* ClassificationResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F6F91D3114B73E10AD3D2DA1 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +118,7 @@
 			);
 			sourceTree = "<group>";
 		};
-		"TEMP_752280D0-D53C-43F7-8C6B-EA2093B1ABA3" /* Views */ = {
+		"TEMP_8C31FFF8-A6EF-485F-A515-02BA472E2044" /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -223,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96B0E1B0035345101F8CC1B /* ClassificationResult.swift in Sources */,
 				AE6E51047901456066B01C18 /* ContentView.swift in Sources */,
 				A0F3EC925670F3958E1FBABF /* DumplingApp.swift in Sources */,
 			);
@@ -232,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA92858918709534E004348C /* ClassificationResultTests.swift in Sources */,
 				30014B0DE5DA255C36D4945C /* DumplingNotDumplingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,12 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.DumplingNotDumplingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumplingNotDumpling.app/DumplingNotDumpling";
@@ -433,12 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.DumplingNotDumplingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumpling.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DumplingNotDumpling.app/DumplingNotDumpling";
