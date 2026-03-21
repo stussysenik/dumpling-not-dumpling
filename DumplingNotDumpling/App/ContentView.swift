@@ -146,6 +146,7 @@ struct ContentView: View {
                 }
             }
             .disabled(classificationService.isClassifying)
+            .accessibilityLabel("Capture photo for classification")
 
             Spacer()
 
@@ -179,15 +180,13 @@ struct ContentView: View {
             ResultView(
                 result: result,
                 image: capturedImage,
-                onTryAgain: { returnToCamera() },
-                onShare: { shareResult() }
+                onTryAgain: { returnToCamera() }
             )
         case .full:
             FullModeResultView(
                 result: result,
                 image: capturedImage,
-                onTryAgain: { returnToCamera() },
-                onShare: { shareResult() }
+                onTryAgain: { returnToCamera() }
             )
         }
     }
@@ -247,11 +246,6 @@ struct ContentView: View {
         classificationResult = nil
         capturedImage = nil
         classificationService.latestResult = nil
-    }
-
-    /// Placeholder for share functionality (implemented in Task 9).
-    private func shareResult() {
-        // Will be implemented in the Share task
     }
 
     // MARK: - Live Classification

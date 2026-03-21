@@ -10,7 +10,8 @@ struct ResultView: View {
     let result: ClassificationResult
     let image: CGImage?
     let onTryAgain: () -> Void
-    let onShare: () -> Void
+
+    @State private var animateResult = false
 
     var accentColor: Color {
         result.isDumpling ? CarbonColor.supportSuccess : CarbonColor.supportError
@@ -40,6 +41,14 @@ struct ResultView: View {
                 Text(result.displayLabel)
                     .font(DumplingFont.display(44))
                     .foregroundStyle(CarbonColor.textPrimary)
+                    .scaleEffect(animateResult ? 1.0 : 0.9)
+                    .opacity(animateResult ? 1.0 : 0)
+                    .onAppear {
+                        withAnimation(.spring(response: 0.5, dampingFraction: 0.6)) {
+                            animateResult = true
+                        }
+                    }
+                    .accessibilityLabel("Classification result: \(result.displayLabel) with \(Int(result.partyConfidence * 100)) percent confidence")
 
                 ConfidenceLabel(result.partyConfidence, color: accentColor)
             }
@@ -50,8 +59,19 @@ struct ResultView: View {
             // Action buttons — positioned in the thumb zone
             HStack(spacing: CarbonSpacing.spacing04) {
                 GlassButton("Try Again", color: CarbonColor.textSecondary, action: onTryAgain)
-                if result.isDumpling {
-                    GlassButton("Share", color: CarbonColor.supportSuccess, action: onShare)
+                if result.isDumpling, let image {
+                    ShareLink(
+                        item: Image(decorative: image, scale: 1.0),
+                        preview: SharePreview(result.displayLabel)
+                    ) {
+                        Text("Share")
+                            .font(DumplingFont.medium(14))
+                            .foregroundStyle(CarbonColor.supportSuccess)
+                            .frame(maxWidth: .infinity)
+                            .frame(minHeight: 48)
+                            .padding(.horizontal, CarbonSpacing.spacing06)
+                    }
+                    .glassEffect(.regular.interactive(), in: .rect(cornerRadius: 8))
                 }
             }
             .padding(.horizontal, CarbonSpacing.spacing05)
