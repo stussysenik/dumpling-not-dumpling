@@ -26,6 +26,6 @@ struct ModeToggle: View {
                 .buttonStyle(.plain)
             }
         }
-        .glassEffect(.regular, in: .capsule)
+        .dumplingGlass(shape: .capsule)
     }
 }

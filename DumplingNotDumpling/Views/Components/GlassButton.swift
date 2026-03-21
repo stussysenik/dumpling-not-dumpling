@@ -20,6 +20,6 @@ struct GlassButton: View {
                 .frame(minHeight: 48) // Carbon min tap target
                 .padding(.horizontal, CarbonSpacing.spacing06)
         }
-        .glassEffect(.regular.interactive(), in: .rect(cornerRadius: 8))
+        .dumplingGlass(interactive: true)
     }
 }

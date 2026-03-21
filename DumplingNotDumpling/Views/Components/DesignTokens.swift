@@ -90,6 +90,34 @@ enum DumplingFont {
     }
 }
 
+// MARK: - Glass Effect Compatibility
+//
+// `.glassEffect()` requires iOS 26+. On earlier versions, fall back to
+// a translucent material background.
+extension View {
+    @ViewBuilder
+    func dumplingGlass(interactive: Bool = false, shape: some Shape = .rect(cornerRadius: 8)) -> some View {
+        if #available(iOS 26.0, macOS 26.0, watchOS 26.0, *) {
+            if interactive {
+                self.glassEffect(.regular.interactive(), in: shape)
+            } else {
+                self.glassEffect(.regular, in: shape)
+            }
+        } else {
+            self.background(.ultraThinMaterial, in: shape)
+        }
+    }
+
+    @ViewBuilder
+    func dumplingGlassClear(shape: some Shape = .rect(cornerRadius: 8)) -> some View {
+        if #available(iOS 26.0, macOS 26.0, watchOS 26.0, *) {
+            self.glassEffect(.clear, in: shape)
+        } else {
+            self.background(.ultraThinMaterial, in: shape)
+        }
+    }
+}
+
 // MARK: - Color Extension
 //
 // Convenience initialiser that accepts a 24-bit hex literal (e.g. 0xFF5733)

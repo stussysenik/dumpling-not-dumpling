@@ -2,9 +2,9 @@ name: DumplingNotDumpling
 options:
   bundleIdPrefix: com.dumpling
   deploymentTarget:
-    iOS: "26.0"
-    macOS: "26.0"
-    watchOS: "12.0"
+    iOS: "18.0"
+    macOS: "15.0"
+    watchOS: "11.0"
   xcodeVersion: "26.3"
 
 settings:
@@ -26,6 +26,8 @@ targets:
       base:
         INFOPLIST_FILE: DumplingNotDumpling/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.dumpling.app
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 95MF6RX2GK
     entitlements:
       path: DumplingNotDumpling/DumplingNotDumpling.entitlements
       properties:

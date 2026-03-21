@@ -57,7 +57,7 @@ struct FullModeResultView: View {
                                 .foregroundStyle(CarbonColor.textSecondary)
                                 .padding(.horizontal, CarbonSpacing.spacing05)
                                 .padding(.vertical, CarbonSpacing.spacing03)
-                                .glassEffect(.clear, in: .rect(cornerRadius: 8))
+                                .dumplingGlassClear()
                         }
                     }
                 } else {
@@ -95,7 +95,7 @@ struct FullModeResultView: View {
                             .frame(minHeight: 48)
                             .padding(.horizontal, CarbonSpacing.spacing06)
                     }
-                    .glassEffect(.regular.interactive(), in: .rect(cornerRadius: 8))
+                    .dumplingGlass(interactive: true)
                 }
             }
             .padding(.horizontal, CarbonSpacing.spacing05)
