@@ -25,6 +25,9 @@
 
 ## What is this?
 
+![Demo](demo.gif)
+
+
 You know the scene. Jian-Yang built an app that tells you if something is a hot dog. Or not a hot dog. Revolutionary.
 
 This is that, but for **dumplings**.
